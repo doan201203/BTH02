@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+  --border: 1rem solid #f5bf23;
+  --grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  align-items: center;
+  padding: 2rem 9%;
+  background: rgb(255, 255, 255);
+  box-shadow: var(--box-shadow);
+}
+
+.nav a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #f5bf23;
+  border-bottom: 0.1rem solid #f5bf23;
+}
+
+.home img {
+  width: 100%;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+}
+
+.option .box {
+  text-align: center;
+}
+
+.option .box img {
+  position: relative;
+}
+
+.option .box p {
+  position: absolute;
+  font-size: 2rem;
+  text-transform: capitalize;
+  top: 108rem;
+  margin-left: 7rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  border-left: var(--border);
+  padding-left: 1rem;
+}
+
+.about .heading span {
+  color: #334;
+}
+
+.about .container {
+  display: flex;
+  justify-content: center;
+}
+
+.about .container .box {
+  width: 33.3%;
+}
+
+.about .container .box img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: yellow;
+  justify-content: space-around;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .container .box {
+    width: 33.3%;
+  }
+}
